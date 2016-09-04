@@ -1,0 +1,45 @@
+{
+  "name": "github-listing-repos",
+  "version": "1.0.0",
+  "description": "Github Listing Repos",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "karma start --single-run",
+    "start": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:renanborgez/github-listing-repos"
+  },
+  "author": "Renan Borges (me@renan.ninja)",
+  "license": "ISC",
+  "homepage": "http://github.com:renanborgez/github-listing-repos",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "chai": "~1.9.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "jasmine-core": "^2.5.0",
+    "jasmine-reporters": "^2.2.0",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "karma": "^1.2.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "pump": "^1.0.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "phantomjs": "^2.1.7"
+  }
+}

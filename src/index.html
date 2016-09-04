@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>
+      Renan Borges - Github Listing Repos
+    </title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__bar">
+        <div class="container">
+          <h1>Sample page using github api to request repositories from a user.</h1>
+        </div>
+      </div>
+      <div class="app__content" ng-controller="MainController">
+        <div class="container">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script src="js/vendors/angular.min.js"></script>
+  <script src="js/vendors/angular-route.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/constants/GlobalConstants.js"></script>
+  <script src="js/factories/UserFactory.js"></script>
+  <script src="js/controllers/MainController.js"></script>
+</html>
+

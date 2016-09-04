@@ -1,0 +1,19 @@
+<form method="get" name="userForm" ng-submit="getUserRepositories(this)">
+  <input type="text" ng-model="username" ng-model="userModel.username" placeholder="Type a user from github" />
+  <button type="submit" value="ok">Search</button>
+</form>
+
+<!-- Success -->
+<div ng-if="status == 200">
+  <div ng-include src="'views/Success.html'"></div>
+</div>
+
+<!-- Searching -->
+<div ng-if="status == -1">
+  <div class="loader"></div>
+</div>
+
+<!-- Not Found -->
+<div ng-if="status > 200">
+  <div ng-include src="'views/Failed.html'"></div>
+</div>

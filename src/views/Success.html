@@ -1,0 +1,8 @@
+<span>Showing repositories of <b>{{ searchedUsername }}</b></span>
+<br />
+<ul>
+  <li ng-repeat="item in userModel">
+    <a href="{{item.html_url}}" target="_blank">{{item.full_name}}</a>
+  </li>
+  <li ng-if="userModel.length == 0">Ops, this user has no repositories.<br /> :(</li>
+</ul>
