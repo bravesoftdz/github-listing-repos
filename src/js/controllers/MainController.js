@@ -1,12 +1,12 @@
 app.controller('MainController', function($scope, $location, UserFactory)
 {
   $scope.userModel = [];
-  $scope.status = 0;
+  $scope.status = null;
   $scope.username;
 
   $scope.getUserRepositories = function (form){
     $scope.searchedUsername = form.username;
-    $scope.status = -1;
+    $scope.status = 0;
 
     UserFactory.getUserRepositories(form.username, function(res){
       $scope.status = res.status;

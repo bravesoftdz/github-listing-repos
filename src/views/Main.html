@@ -4,16 +4,21 @@
 </form>
 
 <!-- Success -->
-<div ng-if="status == 200">
+<div ng-if="status === 200">
   <div ng-include src="'views/Success.html'"></div>
 </div>
 
 <!-- Searching -->
-<div ng-if="status == -1">
+<div ng-if="status === 0">
   <div class="loader"></div>
 </div>
 
 <!-- Not Found -->
 <div ng-if="status > 200">
-  <div ng-include src="'views/Failed.html'"></div>
+  <div ng-include src="'views/NotFound.html'"></div>
+</div>
+
+<!-- Not Found -->
+<div ng-if="status === -1">
+  <div ng-include src="'views/Error.html'"></div>
 </div>
