@@ -50,7 +50,7 @@ describe('MainControllerSpec', function() {
       expect($scope.userModel.length).toEqual(0);
     });
 
-    it('geting user shows searching status as -1 and then 200 after found', function() {
+    it('geting user shows searching status as 0 and then 200 after found', function() {
       var $scope = {};
       var controller = $$controller('MainController', { $scope: $scope });
       var mockedForm = {
@@ -58,7 +58,7 @@ describe('MainControllerSpec', function() {
       };
       $scope.getUserRepositories(mockedForm);
 
-      expect($scope.status).toEqual(-1);
+      expect($scope.status).toEqual(0);
 
       $$httpBackend.flush();
       expect($scope.status).toEqual(200);
